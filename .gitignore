@@ -1,80 +1,293 @@
 # ============================================================
-# SafeCampus AI — .gitignore
+# SafeCampus AI - Root .gitignore
 # ============================================================
 
-# Python
+
+# ============================================================
+# PYTHON
+# ============================================================
+
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-.Python
-*.egg-info/
-dist/
-build/
-.eggs/
-*.whl
-*.egg
+*.Python
 
-# Virtual environments
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+
+# ============================================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ============================================================
+
 venv/
 .venv/
 env/
 ENV/
+
 backend/venv/
 backend/.venv/
 
-# Environment variables / secrets
+ml/venv/
+ml/.venv/
+
+
+# ============================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
 .env
 .env.*
 *.secret
+*.credentials
 
-# Database
+# Allow example environment files
+!.env.example
+!backend/.env.example
+!ml/.env.example
+
+
+# ============================================================
+# DATABASE
+# ============================================================
+
 *.db
 *.sqlite
 *.sqlite3
-backend/campus.db
 
-# ML artifacts (keep lightweight production models and dataset)
+backend/campus.db
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+
+
+# ============================================================
+# MACHINE LEARNING
+# ============================================================
+
+# Python ML cache
+ml/__pycache__/
+ml/.pytest_cache/
+ml/.mypy_cache/
+
+# Temporary ML result images
 ml/results/*.png
+ml/results/*.jpg
+ml/results/*.jpeg
+ml/results/*.pdf
+
+# Keep trained ML models
+!ml/models/
 !ml/models/*.joblib
+!ml/models/*.pkl
+!ml/models/*.h5
+!ml/models/*.keras
 !ml/models/*.json
+
+# Keep ML datasets
+!ml/data/
 !ml/data/*.csv
 
-# IDE (allow shared vscode configs)
+
+# ============================================================
+# IDE / EDITORS
+# ============================================================
+
 .idea/
+*.iml
+*.ipr
+*.iws
+
 *.swp
 *.swo
-*.DS_Store
-Thumbs.db
 
-# Flutter / Dart
+.vscode/
+
+# Allow shared VS Code configuration
+!.vscode/settings.json
+!.vscode/extensions.json
+
+
+# ============================================================
+# OPERATING SYSTEM
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ============================================================
+# FLUTTER / DART
+# ============================================================
+
 mobile/.dart_tool/
 mobile/.flutter-plugins
 mobile/.flutter-plugins-dependencies
 mobile/.packages
-mobile/build/
+
 mobile/.pub-cache/
 mobile/.pub/
+
+mobile/**/doc/api/
+
+
+# ============================================================
+# FLUTTER BUILD
+#
+# IMPORTANT:
+# Keep mobile/build/web because this is the Flutter Web
+# production build used for the current Vercel deployment.
+#
+# Ignore other Flutter build output.
+# ============================================================
+
+mobile/build/*
+!mobile/build/web/
+!mobile/build/web/**
+
+
+# ============================================================
+# FLUTTER COVERAGE
+# ============================================================
+
+mobile/coverage/
+
+
+# ============================================================
+# ANDROID
+# ============================================================
+
 mobile/android/.gradle/
 mobile/android/local.properties
 mobile/android/key.properties
+
+mobile/android/app/debug/
+mobile/android/app/profile/
+mobile/android/app/release/
+
+mobile/android/.cxx/
+
+
+# ============================================================
+# IOS
+# ============================================================
+
 mobile/ios/.symlinks/
-mobile/ios/Flutter/
 mobile/ios/Pods/
-mobile/macos/Flutter/
 
-# Test coverage
-.coverage
-htmlcov/
-.pytest_cache/
-*.pytest.ini
-backend/tests/__pycache__/
+mobile/ios/Flutter/ephemeral/
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/flutter_export_environment.sh
 
-# Logs
+
+# ============================================================
+# MACOS
+# ============================================================
+
+mobile/macos/Pods/
+mobile/macos/Flutter/ephemeral/
+
+
+# ============================================================
+# WINDOWS
+# ============================================================
+
+mobile/windows/flutter/ephemeral/
+
+
+# ============================================================
+# LINUX
+# ============================================================
+
+mobile/linux/flutter/ephemeral/
+
+
+# ============================================================
+# FLUTTER GENERATED FILES
+# ============================================================
+
+mobile/app.*.symbols
+mobile/app.*.map.json
+
+
+# ============================================================
+# NODE / JAVASCRIPT
+# ============================================================
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.cache/
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
 *.log
 logs/
 
-# Temp
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
 tmp/
 temp/
 scratch/
+
+*.tmp
+*.temp
+*.bak
+
+
+# ============================================================
+# ARCHIVES
+# ============================================================
+
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+
+# ============================================================
+# VERCEL
+# ============================================================
+
+.vercel/
+
+
+# ============================================================
+# RESEARCH TEMPORARY FILES
+# ============================================================
+
+research/__pycache__/
+research/.pytest_cache/
+
+research/results/tmp/
+research/figures/tmp/
+
+
+# ============================================================
+# DOCUMENTATION TEMPORARY FILES
+# ============================================================
+
+docs/tmp/
+docs/generated/
