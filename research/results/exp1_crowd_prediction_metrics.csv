@@ -1,0 +1,6 @@
+# DATA ORIGIN: Synthetic campus crowd simulation (Seed: 42). Controlled academic simulation; not empirical physical IoT sensor tracking.
+model,accuracy,precision_macro,precision_weighted,recall_macro,recall_weighted,f1_macro,f1_weighted,train_time_sec,inference_latency_ms,data_type
+Gradient Boosting,0.9328,0.8634,0.9307,0.8161,0.9328,0.8366,0.9313,9.041,0.0113,SYNTHETIC
+Random Forest,0.9257,0.8588,0.9233,0.8019,0.9257,0.8254,0.9238,0.241,0.0054,SYNTHETIC
+Decision Tree,0.913,0.8435,0.9103,0.7887,0.913,0.8116,0.9108,0.033,0.0001,SYNTHETIC
+Logistic Regression,0.7448,0.5834,0.7158,0.5155,0.7448,0.5418,0.7265,0.127,0.0001,SYNTHETIC

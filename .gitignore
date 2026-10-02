@@ -1,0 +1,80 @@
+# ============================================================
+# SafeCampus AI — .gitignore
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# Environment variables / secrets
+.env
+.env.*
+*.secret
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+backend/campus.db
+
+# ML artifacts (keep lightweight production models and dataset)
+ml/results/*.png
+!ml/models/*.joblib
+!ml/models/*.json
+!ml/data/*.csv
+
+# IDE (allow shared vscode configs)
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Flutter / Dart
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/build/
+mobile/.pub-cache/
+mobile/.pub/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/key.properties
+mobile/ios/.symlinks/
+mobile/ios/Flutter/
+mobile/ios/Pods/
+mobile/macos/Flutter/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+*.pytest.ini
+backend/tests/__pycache__/
+
+# Logs
+*.log
+logs/
+
+# Temp
+tmp/
+temp/
+scratch/

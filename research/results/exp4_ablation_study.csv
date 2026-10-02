@@ -1,0 +1,52 @@
+# DATA ORIGIN: Campus graph geometry (data/campus_edges.json). Crowd densities predicted via trained Gradient Boosting ML model. Identical benchmark pairs evaluated across 5 cumulative ablation stages.
+stage,stage_name,source_id,destination_id,pair_label,distance_m,travel_time_min,crowd_score,safety_score,accessibility_score,total_cost,execution_time_ms,path
+1,1. Distance Only,1,8,Main Gate -> Canteen,300.0,3.73,0.5859,0.82,0.8667,1.3636,0.242,1 -> 16 -> 17 -> 8
+2,2. Distance + Time,1,8,Main Gate -> Canteen,300.0,3.73,0.5859,0.82,0.8667,1.36,0.183,1 -> 16 -> 17 -> 8
+3,3. Distance + Time + Crowd,1,8,Main Gate -> Canteen,300.0,3.73,0.5859,0.82,0.8667,1.4913,0.194,1 -> 16 -> 17 -> 8
+4,4. Dist + Time + Crowd + Safety,1,8,Main Gate -> Canteen,300.0,3.73,0.5859,0.82,0.8667,1.2545,0.185,1 -> 16 -> 17 -> 8
+5,5. All Factors + Personalization,1,8,Main Gate -> Canteen,300.0,3.73,0.5859,0.82,0.8667,1.0836,0.26,1 -> 16 -> 17 -> 8
+1,1. Distance Only,1,11,Main Gate -> Auditorium,505.0,6.34,0.6223,0.8686,0.9143,2.2955,0.305,1 -> 16 -> 17 -> 4 -> 9 -> 10 -> 18 -> 11
+2,2. Distance + Time,1,11,Main Gate -> Auditorium,505.0,6.34,0.6223,0.8686,0.9143,2.3005,0.326,1 -> 16 -> 17 -> 4 -> 9 -> 10 -> 18 -> 11
+3,3. Distance + Time + Crowd,1,11,Main Gate -> Auditorium,550.0,6.93,0.5981,0.894,0.964,2.6684,0.314,1 -> 2 -> 3 -> 6 -> 7 -> 11
+4,4. Dist + Time + Crowd + Safety,1,11,Main Gate -> Auditorium,550.0,6.93,0.5981,0.894,0.964,2.1351,0.306,1 -> 2 -> 3 -> 6 -> 7 -> 11
+5,5. All Factors + Personalization,1,11,Main Gate -> Auditorium,550.0,6.93,0.5981,0.894,0.964,1.7441,0.301,1 -> 2 -> 3 -> 6 -> 7 -> 11
+1,1. Distance Only,1,13,Main Gate -> Hostel A,580.0,7.23,0.5959,0.794,0.804,2.6364,0.337,1 -> 16 -> 17 -> 8 -> 12 -> 13
+2,2. Distance + Time,1,13,Main Gate -> Hostel A,580.0,7.23,0.5959,0.794,0.804,2.6327,0.337,1 -> 16 -> 17 -> 8 -> 12 -> 13
+3,3. Distance + Time + Crowd,1,13,Main Gate -> Hostel A,580.0,7.23,0.5959,0.794,0.804,2.7472,0.306,1 -> 16 -> 17 -> 8 -> 12 -> 13
+4,4. Dist + Time + Crowd + Safety,1,13,Main Gate -> Hostel A,580.0,7.23,0.5959,0.794,0.804,2.3188,0.296,1 -> 16 -> 17 -> 8 -> 12 -> 13
+5,5. All Factors + Personalization,1,13,Main Gate -> Hostel A,580.0,7.23,0.5959,0.794,0.804,2.051,0.322,1 -> 16 -> 17 -> 8 -> 12 -> 13
+1,1. Distance Only,1,20,Main Gate -> Side Gate,680.0,8.48,0.5747,0.795,0.8167,3.0909,0.344,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20
+2,2. Distance + Time,1,20,Main Gate -> Side Gate,680.0,8.48,0.5747,0.795,0.8167,3.0873,0.339,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20
+3,3. Distance + Time + Crowd,1,20,Main Gate -> Side Gate,680.0,8.48,0.5747,0.795,0.8167,3.2063,0.339,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20
+4,4. Dist + Time + Crowd + Safety,1,20,Main Gate -> Side Gate,680.0,8.48,0.5747,0.795,0.8167,2.7131,0.326,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20
+5,5. All Factors + Personalization,1,20,Main Gate -> Side Gate,680.0,8.48,0.5747,0.795,0.8167,2.3905,0.325,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20
+1,1. Distance Only,2,8,Admin Block -> Canteen,260.0,3.25,0.6108,0.8367,0.8833,1.1818,0.153,2 -> 3 -> 17 -> 8
+2,2. Distance + Time,2,8,Admin Block -> Canteen,260.0,3.25,0.6108,0.8367,0.8833,1.1818,0.191,2 -> 3 -> 17 -> 8
+3,3. Distance + Time + Crowd,2,8,Admin Block -> Canteen,260.0,3.25,0.6108,0.8367,0.8833,1.3965,0.21,2 -> 3 -> 17 -> 8
+4,4. Dist + Time + Crowd + Safety,2,8,Admin Block -> Canteen,260.0,3.25,0.6108,0.8367,0.8833,1.1715,0.219,2 -> 3 -> 17 -> 8
+5,5. All Factors + Personalization,2,8,Admin Block -> Canteen,260.0,3.25,0.6108,0.8367,0.8833,1.0072,0.214,2 -> 3 -> 17 -> 8
+1,1. Distance Only,4,11,CSE Block -> Auditorium,235.0,2.96,0.6535,0.895,0.9375,1.0682,0.203,4 -> 9 -> 10 -> 18 -> 11
+2,2. Distance + Time,4,11,CSE Block -> Auditorium,235.0,2.96,0.6535,0.895,0.9375,1.0723,0.231,4 -> 9 -> 10 -> 18 -> 11
+3,3. Distance + Time + Crowd,4,11,CSE Block -> Auditorium,235.0,2.96,0.6535,0.895,0.9375,1.5811,0.28,4 -> 9 -> 10 -> 18 -> 11
+4,4. Dist + Time + Crowd + Safety,4,11,CSE Block -> Auditorium,235.0,2.96,0.6535,0.895,0.9375,1.2947,0.275,4 -> 9 -> 10 -> 18 -> 11
+5,5. All Factors + Personalization,4,11,CSE Block -> Auditorium,235.0,2.96,0.6535,0.895,0.9375,1.0857,0.279,4 -> 9 -> 10 -> 18 -> 11
+1,1. Distance Only,3,14,Junction A -> Hostel B,510.0,6.43,0.6289,0.8675,0.9175,2.3182,0.322,3 -> 6 -> 7 -> 11 -> 14
+2,2. Distance + Time,3,14,Junction A -> Hostel B,510.0,6.43,0.6289,0.8675,0.9175,2.3282,0.314,3 -> 6 -> 7 -> 11 -> 14
+3,3. Distance + Time + Crowd,3,14,Junction A -> Hostel B,510.0,6.43,0.6289,0.8675,0.9175,2.39,0.33,3 -> 6 -> 7 -> 11 -> 14
+4,4. Dist + Time + Crowd + Safety,3,14,Junction A -> Hostel B,510.0,6.43,0.6289,0.8675,0.9175,1.9255,0.31,3 -> 6 -> 7 -> 11 -> 14
+5,5. All Factors + Personalization,3,14,Junction A -> Hostel B,510.0,6.43,0.6289,0.8675,0.9175,1.6064,0.305,3 -> 6 -> 7 -> 11 -> 14
+1,1. Distance Only,6,13,Junction B -> Hostel A,390.0,4.88,0.6272,0.8567,0.89,1.7727,0.296,6 -> 7 -> 11 -> 13
+2,2. Distance + Time,6,13,Junction B -> Hostel A,390.0,4.88,0.6272,0.8567,0.89,1.7736,0.404,6 -> 7 -> 11 -> 13
+3,3. Distance + Time + Crowd,6,13,Junction B -> Hostel A,390.0,4.88,0.6272,0.8567,0.89,1.8093,0.304,6 -> 7 -> 11 -> 13
+4,4. Dist + Time + Crowd + Safety,6,13,Junction B -> Hostel A,390.0,4.88,0.6272,0.8567,0.89,1.4647,0.302,6 -> 7 -> 11 -> 13
+5,5. All Factors + Personalization,6,13,Junction B -> Hostel A,390.0,4.88,0.6272,0.8567,0.89,1.3978,0.326,6 -> 7 -> 11 -> 13
+1,1. Distance Only,16,8,Parking Lot -> Canteen,220.0,2.73,0.6228,0.78,0.8,1.0,0.119,16 -> 17 -> 8
+2,2. Distance + Time,16,8,Parking Lot -> Canteen,220.0,2.73,0.6228,0.78,0.8,0.9964,0.128,16 -> 17 -> 8
+3,3. Distance + Time + Crowd,16,8,Parking Lot -> Canteen,220.0,2.73,0.6228,0.78,0.8,1.0787,0.133,16 -> 17 -> 8
+4,4. Dist + Time + Crowd + Safety,16,8,Parking Lot -> Canteen,220.0,2.73,0.6228,0.78,0.8,0.9196,0.133,16 -> 17 -> 8
+5,5. All Factors + Personalization,16,8,Parking Lot -> Canteen,220.0,2.73,0.6228,0.78,0.8,0.8157,0.148,16 -> 17 -> 8
+1,1. Distance Only,16,12,Parking Lot -> Sports Ground,380.0,4.73,0.6405,0.77,0.7667,1.7273,0.229,16 -> 17 -> 8 -> 12
+2,2. Distance + Time,16,12,Parking Lot -> Sports Ground,380.0,4.73,0.6405,0.77,0.7667,1.7236,0.267,16 -> 17 -> 8 -> 12
+3,3. Distance + Time + Crowd,16,12,Parking Lot -> Sports Ground,380.0,4.73,0.6405,0.77,0.7667,1.7889,0.242,16 -> 17 -> 8 -> 12
+4,4. Dist + Time + Crowd + Safety,16,12,Parking Lot -> Sports Ground,380.0,4.73,0.6405,0.77,0.7667,1.5147,0.255,16 -> 17 -> 8 -> 12
+5,5. All Factors + Personalization,16,12,Parking Lot -> Sports Ground,380.0,4.73,0.6405,0.77,0.7667,1.3517,0.271,16 -> 17 -> 8 -> 12

@@ -1,0 +1,19 @@
+{
+  "features": [
+    "hour",
+    "day_of_week",
+    "location_id",
+    "event_flag",
+    "class_activity",
+    "exam_flag",
+    "holiday_flag",
+    "historical_crowd"
+  ],
+  "classes": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "VERY_HIGH"
+  ],
+  "scaler_used": true
+}

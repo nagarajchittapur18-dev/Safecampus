@@ -1,0 +1,1 @@
+"""SafeCampus AI — Schemas Package"""

@@ -1,0 +1,38 @@
+# DATA ORIGIN: Physical campus graph topology (data/campus_edges.json). Crowd densities predicted via trained Gradient Boosting ML model. Controlled academic benchmark; not empirical IoT tracking.
+source_id,destination_id,pair_label,algorithm,distance_m,travel_time_min,crowd_score,safety_score,accessibility_score,execution_time_ms,path_length
+1,2,Main Gate -> Admin Block (Short),Dijkstra,120.0,1.5,0.4814,0.92,1.0,0.027,2
+1,2,Main Gate -> Admin Block (Short),A*,120.0,1.5,0.4814,0.92,1.0,0.041,2
+1,2,Main Gate -> Admin Block (Short),Personalized Multi-Objective A*,120.0,1.5,0.4803,0.92,1.0,0.093,2
+4,9,CSE Block -> Lab A (Short),Dijkstra,55.0,0.7,0.6584,0.91,0.95,0.024,2
+4,9,CSE Block -> Lab A (Short),A*,55.0,0.7,0.6584,0.91,0.95,0.043,2
+4,9,CSE Block -> Lab A (Short),Personalized Multi-Objective A*,55.0,0.7,0.6566,0.91,0.95,0.098,2
+7,8,Library -> Canteen (Short),Dijkstra,255.0,3.21,0.6679,0.87,0.9167,0.046,4
+7,8,Library -> Canteen (Short),A*,255.0,3.21,0.6679,0.87,0.9167,0.063,4
+7,8,Library -> Canteen (Short),Personalized Multi-Objective A*,255.0,3.21,0.6633,0.87,0.9167,0.255,4
+13,14,Hostel A -> Hostel B (Short),Dijkstra,190.0,2.38,0.4685,0.81,0.89,0.034,3
+13,14,Hostel A -> Hostel B (Short),A*,190.0,2.38,0.4685,0.81,0.89,0.047,3
+13,14,Hostel A -> Hostel B (Short),Personalized Multi-Objective A*,190.0,2.38,0.4685,0.81,0.89,0.128,3
+1,8,Main Gate -> Canteen (Medium),Dijkstra,300.0,3.73,0.6205,0.82,0.8667,0.042,4
+1,8,Main Gate -> Canteen (Medium),A*,300.0,3.73,0.6205,0.82,0.8667,0.06,4
+1,8,Main Gate -> Canteen (Medium),Personalized Multi-Objective A*,300.0,3.73,0.5859,0.82,0.8667,0.213,4
+2,11,Admin Block -> Auditorium (Medium),Dijkstra,430.0,5.43,0.6529,0.8875,0.955,0.053,5
+2,11,Admin Block -> Auditorium (Medium),A*,430.0,5.43,0.6529,0.8875,0.955,0.11,5
+2,11,Admin Block -> Auditorium (Medium),Personalized Multi-Objective A*,430.0,5.43,0.6275,0.8875,0.955,0.287,5
+3,15,Junction A -> Health Center (Medium),Dijkstra,240.0,2.95,0.4516,0.905,0.975,0.044,3
+3,15,Junction A -> Health Center (Medium),A*,240.0,2.95,0.4516,0.905,0.975,0.05,3
+3,15,Junction A -> Health Center (Medium),Personalized Multi-Objective A*,240.0,2.95,0.5008,0.905,0.975,0.192,3
+6,20,Junction B -> Side Gate (Medium),Dijkstra,490.0,6.13,0.5701,0.8425,0.8875,0.055,5
+6,20,Junction B -> Side Gate (Medium),A*,490.0,6.13,0.5701,0.8425,0.8875,0.123,5
+6,20,Junction B -> Side Gate (Medium),Personalized Multi-Objective A*,490.0,6.16,0.5875,0.855,0.905,0.375,5
+1,11,Main Gate -> Auditorium (Long),Dijkstra,505.0,6.34,0.6369,0.8686,0.9143,0.051,8
+1,11,Main Gate -> Auditorium (Long),A*,505.0,6.34,0.6369,0.8686,0.9143,0.112,8
+1,11,Main Gate -> Auditorium (Long),Personalized Multi-Objective A*,550.0,6.93,0.5981,0.894,0.964,0.268,6
+1,13,Main Gate -> Hostel A (Long),Dijkstra,580.0,7.23,0.5907,0.794,0.804,0.056,6
+1,13,Main Gate -> Hostel A (Long),A*,580.0,7.23,0.5907,0.794,0.804,0.113,6
+1,13,Main Gate -> Hostel A (Long),Personalized Multi-Objective A*,580.0,7.23,0.5959,0.794,0.804,0.281,6
+16,12,Parking Lot -> Sports Ground (Long),Dijkstra,380.0,4.73,0.6604,0.77,0.7667,0.047,4
+16,12,Parking Lot -> Sports Ground (Long),A*,380.0,4.73,0.6604,0.77,0.7667,0.08,4
+16,12,Parking Lot -> Sports Ground (Long),Personalized Multi-Objective A*,380.0,4.73,0.6405,0.77,0.7667,0.238,4
+1,20,Main Gate -> Side Gate (Long),Dijkstra,680.0,8.48,0.5772,0.795,0.8167,0.055,7
+1,20,Main Gate -> Side Gate (Long),A*,680.0,8.48,0.5772,0.795,0.8167,0.124,7
+1,20,Main Gate -> Side Gate (Long),Personalized Multi-Objective A*,680.0,8.48,0.5747,0.795,0.8167,0.287,7

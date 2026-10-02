@@ -1,0 +1,1 @@
+"""SafeCampus AI — Services Package"""

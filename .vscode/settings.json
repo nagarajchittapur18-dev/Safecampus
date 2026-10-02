@@ -1,0 +1,13 @@
+{
+  "python.testing.pytestArgs": [
+    "backend/tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/backend",
+    "${workspaceFolder}"
+  ],
+  "dart.flutterSdkPath": null,
+  "cmake.sourceDirectory": "C:/Users/Nagaraj/Desktop/Safecampus-AI/mobile/windows"
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Main Gate",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "type": "gate",
+    "description": "Primary campus entrance"
+  },
+  {
+    "id": 2,
+    "name": "Admin Block",
+    "latitude": 12.9720,
+    "longitude": 77.5950,
+    "type": "building",
+    "description": "Administrative offices and principal's office"
+  },
+  {
+    "id": 3,
+    "name": "Junction A",
+    "latitude": 12.9724,
+    "longitude": 77.5948,
+    "type": "junction",
+    "description": "Central pathway junction near Admin"
+  },
+  {
+    "id": 4,
+    "name": "CSE Block",
+    "latitude": 12.9730,
+    "longitude": 77.5942,
+    "type": "building",
+    "description": "Computer Science and Engineering department"
+  },
+  {
+    "id": 5,
+    "name": "ECE Block",
+    "latitude": 12.9730,
+    "longitude": 77.5955,
+    "type": "building",
+    "description": "Electronics and Communication Engineering department"
+  },
+  {
+    "id": 6,
+    "name": "Junction B",
+    "latitude": 12.9728,
+    "longitude": 77.5948,
+    "type": "junction",
+    "description": "North pathway junction between CSE and ECE"
+  },
+  {
+    "id": 7,
+    "name": "Library",
+    "latitude": 12.9735,
+    "longitude": 77.5948,
+    "type": "library",
+    "description": "Central library with reading halls"
+  },
+  {
+    "id": 8,
+    "name": "Canteen",
+    "latitude": 12.9733,
+    "longitude": 77.5935,
+    "type": "canteen",
+    "description": "Main student canteen"
+  },
+  {
+    "id": 9,
+    "name": "Lab A",
+    "latitude": 12.9732,
+    "longitude": 77.5940,
+    "type": "lab",
+    "description": "Computer lab A — 60 seats"
+  },
+  {
+    "id": 10,
+    "name": "Lab B",
+    "latitude": 12.9736,
+    "longitude": 77.5940,
+    "type": "lab",
+    "description": "Computer lab B — 60 seats"
+  },
+  {
+    "id": 11,
+    "name": "Auditorium",
+    "latitude": 12.9738,
+    "longitude": 77.5948,
+    "type": "auditorium",
+    "description": "Main auditorium — 800 capacity"
+  },
+  {
+    "id": 12,
+    "name": "Sports Ground",
+    "latitude": 12.9740,
+    "longitude": 77.5935,
+    "type": "outdoor",
+    "description": "Football and cricket ground"
+  },
+  {
+    "id": 13,
+    "name": "Hostel A",
+    "latitude": 12.9744,
+    "longitude": 77.5942,
+    "type": "hostel",
+    "description": "Boys hostel block A"
+  },
+  {
+    "id": 14,
+    "name": "Hostel B",
+    "latitude": 12.9744,
+    "longitude": 77.5955,
+    "type": "hostel",
+    "description": "Girls hostel block B"
+  },
+  {
+    "id": 15,
+    "name": "Health Center",
+    "latitude": 12.9722,
+    "longitude": 77.5960,
+    "type": "building",
+    "description": "Campus medical facility"
+  },
+  {
+    "id": 16,
+    "name": "Parking Lot",
+    "latitude": 12.9718,
+    "longitude": 77.5942,
+    "type": "parking",
+    "description": "Main vehicle parking area"
+  },
+  {
+    "id": 17,
+    "name": "Corridor C",
+    "latitude": 12.9726,
+    "longitude": 77.5942,
+    "type": "corridor",
+    "description": "Covered corridor connecting CSE and Canteen wings"
+  },
+  {
+    "id": 18,
+    "name": "Junction C",
+    "latitude": 12.9737,
+    "longitude": 77.5944,
+    "type": "junction",
+    "description": "North-west junction near Library and Lab B"
+  },
+  {
+    "id": 19,
+    "name": "Dept Office",
+    "latitude": 12.9731,
+    "longitude": 77.5952,
+    "type": "building",
+    "description": "Common departmental office"
+  },
+  {
+    "id": 20,
+    "name": "Side Gate",
+    "latitude": 12.9748,
+    "longitude": 77.5948,
+    "type": "gate",
+    "description": "Secondary campus exit near hostels"
+  }
+]

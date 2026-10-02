@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backend: FastAPI (Uvicorn)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "app.main:app",
+        "--reload",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ],
+      "cwd": "${workspaceFolder}/backend",
+      "jinja": true,
+      "justMyCode": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Mobile: Flutter (Chrome Web)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/mobile",
+      "args": [
+        "-d",
+        "chrome"
+      ]
+    },
+    {
+      "name": "Mobile: Flutter (Windows Desktop)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/mobile",
+      "args": [
+        "-d",
+        "windows"
+      ]
+    },
+    {
+      "name": "Mobile: Flutter (Auto-detect / Android / Connected Device)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/mobile"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack (Backend + Flutter Web)",
+      "configurations": [
+        "Backend: FastAPI (Uvicorn)",
+        "Mobile: Flutter (Chrome Web)"
+      ]
+    }
+  ]
+}

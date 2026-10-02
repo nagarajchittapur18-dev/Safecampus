@@ -1,0 +1,62 @@
+# DATA ORIGIN: Campus graph geometry (data/campus_edges.json). Crowd densities predicted via trained Gradient Boosting ML model. Identical source/destination pairs tested across all presets.
+source_id,destination_id,pair_label,preference,distance_m,travel_time_min,crowd_score,crowd_level,safety_score,accessibility_score,total_cost,execution_time_ms,path,path_length
+1,8,Main Gate -> Canteen,shortest,300.0,3.73,0.5132,MEDIUM,0.82,0.8667,1.2412,0.318,1 -> 16 -> 17 -> 8,4
+1,8,Main Gate -> Canteen,fastest,300.0,3.73,0.5132,MEDIUM,0.82,0.8667,1.2368,0.399,1 -> 16 -> 17 -> 8,4
+1,8,Main Gate -> Canteen,safest,300.0,3.73,0.5132,MEDIUM,0.82,0.8667,0.6992,0.353,1 -> 16 -> 17 -> 8,4
+1,8,Main Gate -> Canteen,least_crowded,300.0,3.73,0.5132,MEDIUM,0.82,0.8667,1.356,0.305,1 -> 16 -> 17 -> 8,4
+1,8,Main Gate -> Canteen,accessible,300.0,3.73,0.5132,MEDIUM,0.82,0.8667,0.6152,0.283,1 -> 16 -> 17 -> 8,4
+1,8,Main Gate -> Canteen,balanced,300.0,3.73,0.5132,MEDIUM,0.82,0.8667,1.0399,0.211,1 -> 16 -> 17 -> 8,4
+1,11,Main Gate -> Auditorium,shortest,505.0,6.34,0.5768,HIGH,0.8686,0.9143,2.1612,0.258,1 -> 16 -> 17 -> 4 -> 9 -> 10 -> 18 -> 11,8
+1,11,Main Gate -> Auditorium,fastest,505.0,6.34,0.5768,HIGH,0.8686,0.9143,2.1672,0.232,1 -> 16 -> 17 -> 4 -> 9 -> 10 -> 18 -> 11,8
+1,11,Main Gate -> Auditorium,safest,550.0,6.93,0.5534,HIGH,0.894,0.964,0.9034,0.187,1 -> 2 -> 3 -> 6 -> 7 -> 11,6
+1,11,Main Gate -> Auditorium,least_crowded,550.0,6.93,0.5534,HIGH,0.894,0.964,2.375,0.274,1 -> 2 -> 3 -> 6 -> 7 -> 11,6
+1,11,Main Gate -> Auditorium,accessible,550.0,6.93,0.5534,HIGH,0.894,0.964,0.6934,0.222,1 -> 2 -> 3 -> 6 -> 7 -> 11,6
+1,11,Main Gate -> Auditorium,balanced,550.0,6.93,0.5534,HIGH,0.894,0.964,1.6994,0.174,1 -> 2 -> 3 -> 6 -> 7 -> 11,6
+1,13,Main Gate -> Hostel A,shortest,580.0,7.23,0.5435,HIGH,0.794,0.804,2.3963,0.397,1 -> 16 -> 17 -> 8 -> 12 -> 13,6
+1,13,Main Gate -> Hostel A,fastest,580.0,7.23,0.5435,HIGH,0.794,0.804,2.3919,0.421,1 -> 16 -> 17 -> 8 -> 12 -> 13,6
+1,13,Main Gate -> Hostel A,safest,680.0,8.53,0.5545,HIGH,0.8817,0.9367,1.2455,0.474,1 -> 2 -> 3 -> 6 -> 7 -> 11 -> 13,7
+1,13,Main Gate -> Hostel A,least_crowded,580.0,7.23,0.5435,HIGH,0.794,0.804,2.4495,0.431,1 -> 16 -> 17 -> 8 -> 12 -> 13,6
+1,13,Main Gate -> Hostel A,accessible,880.0,11.06,0.5266,HIGH,0.8675,0.9313,1.3027,0.462,1 -> 2 -> 3 -> 6 -> 7 -> 11 -> 14 -> 20 -> 13,9
+1,13,Main Gate -> Hostel A,balanced,580.0,7.23,0.5435,HIGH,0.794,0.804,1.9986,0.229,1 -> 16 -> 17 -> 8 -> 12 -> 13,6
+1,20,Main Gate -> Side Gate,shortest,680.0,8.48,0.5268,HIGH,0.795,0.8167,2.808,0.388,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20,7
+1,20,Main Gate -> Side Gate,fastest,680.0,8.48,0.5268,HIGH,0.795,0.8167,2.8037,0.321,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20,7
+1,20,Main Gate -> Side Gate,safest,780.0,9.81,0.5385,HIGH,0.8771,0.9386,1.3664,0.454,1 -> 2 -> 3 -> 6 -> 7 -> 11 -> 14 -> 20,8
+1,20,Main Gate -> Side Gate,least_crowded,680.0,8.48,0.5268,HIGH,0.795,0.8167,2.8539,0.381,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20,7
+1,20,Main Gate -> Side Gate,accessible,780.0,9.81,0.5385,HIGH,0.8771,0.9386,1.1084,0.442,1 -> 2 -> 3 -> 6 -> 7 -> 11 -> 14 -> 20,8
+1,20,Main Gate -> Side Gate,balanced,680.0,8.48,0.5268,HIGH,0.795,0.8167,2.3331,0.454,1 -> 16 -> 17 -> 8 -> 12 -> 13 -> 20,7
+2,8,Admin Block -> Canteen,shortest,260.0,3.25,0.5337,HIGH,0.8367,0.8833,1.092,0.204,2 -> 3 -> 17 -> 8,4
+2,8,Admin Block -> Canteen,fastest,260.0,3.25,0.5337,HIGH,0.8367,0.8833,1.092,0.268,2 -> 3 -> 17 -> 8,4
+2,8,Admin Block -> Canteen,safest,260.0,3.25,0.5337,HIGH,0.8367,0.8833,0.6353,0.36,2 -> 3 -> 17 -> 8,4
+2,8,Admin Block -> Canteen,least_crowded,260.0,3.25,0.5337,HIGH,0.8367,0.8833,1.3644,0.285,2 -> 3 -> 17 -> 8,4
+2,8,Admin Block -> Canteen,accessible,260.0,3.25,0.5337,HIGH,0.8367,0.8833,0.5513,0.358,2 -> 3 -> 17 -> 8,4
+2,8,Admin Block -> Canteen,balanced,260.0,3.25,0.5337,HIGH,0.8367,0.8833,0.9609,0.297,2 -> 3 -> 17 -> 8,4
+4,11,CSE Block -> Auditorium,shortest,235.0,2.96,0.6263,HIGH,0.895,0.9375,1.0351,0.306,4 -> 9 -> 10 -> 18 -> 11,5
+4,11,CSE Block -> Auditorium,fastest,235.0,2.96,0.6263,HIGH,0.895,0.9375,1.04,0.359,4 -> 9 -> 10 -> 18 -> 11,5
+4,11,CSE Block -> Auditorium,safest,235.0,2.96,0.6263,HIGH,0.895,0.9375,0.6049,0.364,4 -> 9 -> 10 -> 18 -> 11,5
+4,11,CSE Block -> Auditorium,least_crowded,350.0,4.41,0.63,HIGH,0.8767,0.93,1.6097,0.382,4 -> 6 -> 7 -> 11,4
+4,11,CSE Block -> Auditorium,accessible,235.0,2.96,0.6263,HIGH,0.895,0.9375,0.5029,0.332,4 -> 9 -> 10 -> 18 -> 11,5
+4,11,CSE Block -> Auditorium,balanced,235.0,2.96,0.6263,HIGH,0.895,0.9375,1.0639,0.265,4 -> 9 -> 10 -> 18 -> 11,5
+3,14,Junction A -> Hostel B,shortest,510.0,6.43,0.5975,HIGH,0.8675,0.9175,2.0456,0.325,3 -> 6 -> 7 -> 11 -> 14,5
+3,14,Junction A -> Hostel B,fastest,510.0,6.43,0.5975,HIGH,0.8675,0.9175,2.0576,0.371,3 -> 6 -> 7 -> 11 -> 14,5
+3,14,Junction A -> Hostel B,safest,510.0,6.43,0.5975,HIGH,0.8675,0.9175,0.8722,0.392,3 -> 6 -> 7 -> 11 -> 14,5
+3,14,Junction A -> Hostel B,least_crowded,510.0,6.43,0.5975,HIGH,0.8675,0.9175,2.0913,0.493,3 -> 6 -> 7 -> 11 -> 14,5
+3,14,Junction A -> Hostel B,accessible,510.0,6.43,0.5975,HIGH,0.8675,0.9175,0.7522,0.394,3 -> 6 -> 7 -> 11 -> 14,5
+3,14,Junction A -> Hostel B,balanced,510.0,6.43,0.5975,HIGH,0.8675,0.9175,1.5813,0.395,3 -> 6 -> 7 -> 11 -> 14,5
+6,13,Junction B -> Hostel A,shortest,390.0,4.88,0.6124,HIGH,0.8567,0.89,1.6097,0.378,6 -> 7 -> 11 -> 13,4
+6,13,Junction B -> Hostel A,fastest,390.0,4.88,0.6124,HIGH,0.8567,0.89,1.6108,0.399,6 -> 7 -> 11 -> 13,4
+6,13,Junction B -> Hostel A,safest,390.0,4.88,0.6124,HIGH,0.8567,0.89,0.7719,0.413,6 -> 7 -> 11 -> 13,4
+6,13,Junction B -> Hostel A,least_crowded,390.0,4.88,0.6124,HIGH,0.8567,0.89,1.6516,0.374,6 -> 7 -> 11 -> 13,4
+6,13,Junction B -> Hostel A,accessible,590.0,7.41,0.5447,HIGH,0.844,0.9,0.9671,0.411,6 -> 7 -> 11 -> 14 -> 20 -> 13,6
+6,13,Junction B -> Hostel A,balanced,390.0,4.88,0.6124,HIGH,0.8567,0.89,1.3889,0.37,6 -> 7 -> 11 -> 13,4
+16,8,Parking Lot -> Canteen,shortest,220.0,2.73,0.5394,HIGH,0.78,0.8,0.9172,0.129,16 -> 17 -> 8,3
+16,8,Parking Lot -> Canteen,fastest,220.0,2.73,0.5394,HIGH,0.78,0.8,0.9129,0.343,16 -> 17 -> 8,3
+16,8,Parking Lot -> Canteen,safest,220.0,2.73,0.5394,HIGH,0.78,0.8,0.5516,0.211,16 -> 17 -> 8,3
+16,8,Parking Lot -> Canteen,least_crowded,220.0,2.73,0.5394,HIGH,0.78,0.8,0.9689,0.19,16 -> 17 -> 8,3
+16,8,Parking Lot -> Canteen,accessible,220.0,2.73,0.5394,HIGH,0.78,0.8,0.5276,0.259,16 -> 17 -> 8,3
+16,8,Parking Lot -> Canteen,balanced,220.0,2.73,0.5394,HIGH,0.78,0.8,0.7823,0.187,16 -> 17 -> 8,3
+16,12,Parking Lot -> Sports Ground,shortest,380.0,4.73,0.577,HIGH,0.77,0.7667,1.5716,0.264,16 -> 17 -> 8 -> 12,4
+16,12,Parking Lot -> Sports Ground,fastest,380.0,4.73,0.577,HIGH,0.77,0.7667,1.5673,0.3,16 -> 17 -> 8 -> 12,4
+16,12,Parking Lot -> Sports Ground,safest,380.0,4.73,0.577,HIGH,0.77,0.7667,0.8983,0.325,16 -> 17 -> 8 -> 12,4
+16,12,Parking Lot -> Sports Ground,least_crowded,380.0,4.73,0.577,HIGH,0.77,0.7667,1.5744,0.297,16 -> 17 -> 8 -> 12,4
+16,12,Parking Lot -> Sports Ground,accessible,380.0,4.73,0.577,HIGH,0.77,0.7667,0.9043,0.372,16 -> 17 -> 8 -> 12,4
+16,12,Parking Lot -> Sports Ground,balanced,380.0,4.73,0.577,HIGH,0.77,0.7667,1.3137,0.303,16 -> 17 -> 8 -> 12,4
